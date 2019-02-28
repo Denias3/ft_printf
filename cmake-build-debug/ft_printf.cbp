@@ -317,6 +317,9 @@
 		<Unit filename="/Users/emeha/CLionProjects/ft_printf/printf_flag_d.c">
 			<Option target="ft_printf"/>
 		</Unit>
+		<Unit filename="/Users/emeha/CLionProjects/ft_printf/printf_flag_o.c">
+			<Option target="ft_printf"/>
+		</Unit>
 		<Unit filename="/Users/emeha/CLionProjects/ft_printf/printf_flag_s.c">
 			<Option target="ft_printf"/>
 		</Unit>

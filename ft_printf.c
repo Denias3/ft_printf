@@ -41,21 +41,17 @@ t_flist *specifiers(char **format)
 		}
 		else if (**format >= '0' && **format <= '9')
 		{
-			if (**format == '0')
-				elem->zero = 1;
-			else
-			{
-				if (ch == 0)
-				{
-					elem->accu_l = ft_atoi(*format);
-					*format = *format + ft_numlen(elem->accu_l) - 1;
-				}
-				else
-				{
-					elem->accu_r = ft_atoi(*format);
-					*format = *format + ft_numlen(elem->accu_r) - 1;
-				}
-			}
+            if (ch == 0)
+            {
+                elem->accu_l = ft_atoi(*format);
+                *format = *format + ft_numlen(elem->accu_l) - 1;
+            }
+            else
+            {
+                elem->accu_r = ft_atoi(*format);
+                *format = *format + ft_numlen(elem->accu_r) - 1;
+                ch = 0;
+            }
 		}
 		else if (**format == '.')
 		{
@@ -78,25 +74,27 @@ t_flist *specifiers(char **format)
 	}
 	elem->spec = **format;
 	(*format)++;
+    if (**format == '0')
+        elem->zero = 1;
 	return (elem);
 
 }
 
 
-//void    flist_print(t_flist *elem)
-//{
-//	printf("spec - %c\n", elem->spec);
-//	printf("accu_l - %d\n", elem->accu_l);
-//	printf("accu_r - %d\n", elem->accu_r);
-//	printf("dot - %d\n", elem->dot);
-//	printf("flag - %s\n", elem->flag);
-//	printf("hash - %d\n", elem->hash);
-//	printf("zero - %d\n", elem->zero);
-//	printf("plus - %d\n", elem->plus);
-//	printf("minus - %d\n", elem->minus);
-//	printf("space - %d\n", elem->space);
-//	printf("\n\n");
-//}
+void    flist_print(t_flist *elem)
+{
+	printf("spec - %c\n", elem->spec);
+	printf("accu_l - %d\n", elem->accu_l);
+	printf("accu_r - %d\n", elem->accu_r);
+	printf("dot - %d\n", elem->dot);
+	printf("flag - %s\n", elem->flag);
+	printf("hash - %d\n", elem->hash);
+	printf("zero - %d\n", elem->zero);
+	printf("plus - %d\n", elem->plus);
+	printf("minus - %d\n", elem->minus);
+	printf("space - %d\n", elem->space);
+	printf("\n\n");
+}
 
 
 int     solve_printf(char *format, va_list ap)
@@ -118,9 +116,9 @@ int     solve_printf(char *format, va_list ap)
 			else if (elem->spec == 'd' || elem->spec == 'i')
 				g_s += printf_flag_d(va_arg(ap, int), elem);
 			else if (elem->spec == 'o')
-				g_s += printf_flag_d(ft_atoi(ft_itoa_base(va_arg(ap, unsigned int), 8)), elem);
+				g_s += printf_flag_o(ft_atoi(ft_itoa_base(va_arg(ap, unsigned int), 8)), elem);
 			else if (elem->spec == 'u')
-				g_s += printf_flag_d(va_arg(ap, unsigned int), elem);
+				g_s += printf_flag_d(va_arg(ap, uintmax_t), elem);
 //			else if (format[g_s] == 'x')
 //			{
 //				if ((data = printf_flag_s(ft_strlowcase(ft_itoa_base(va_arg(ap, unsigned int), 16)), l, r, tmp->dot)) == NULL)
@@ -172,10 +170,10 @@ int	ft_printf(char *format, ...)
 	va_end (ap);
 	return (g_s);
 }
-//
-//int main()
-//{
-//	int s1 = ft_printf("|%#o|", 230);
-//	printf("\nsize - %d", s1);
-//    printf("\n|%#o|", 230);
-//}
+
+int main()
+{
+	int s1 = ft_printf("|%.10#05d|", 1);
+	printf("\nsize - %d\n", s1);
+    printf("|%.10#05d|", 1);
+}

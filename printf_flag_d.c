@@ -20,6 +20,22 @@ int printf_flag_d(int n, t_flist *elem)
 	int i;
 
 	i = 0;
+//	if (ft_strcmp(elem->flag, "hh") == 0)
+//	{
+//		n = (char)n;
+//	}
+//	else if (ft_strcmp(elem->flag, "h") == 0)
+//	{
+//		n = (short int)n;
+//	}
+//	else if (ft_strcmp(elem->flag, "ll") == 0)
+//	{
+//		n = (long long)n;
+//	}
+//	else if (ft_strcmp(elem->flag, "l") == 0)
+//	{
+//		n = (long)n;
+//	}
 	if (ft_numlen(n) > elem->accu_r)
 		s = ft_numlen(n);
 	else

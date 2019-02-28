@@ -35,6 +35,7 @@ int             printf_flag_c(int	c, t_flist *elem);
 int             printf_flag_s(char *n, t_flist *elem);
 int             printf_flag_p(char *n, t_flist *elem);
 int             printf_flag_d(int n, t_flist *elem);
+int				printf_flag_o(int n, t_flist *elem);
 void            flist_free(t_flist *elem);
 
 #endif
