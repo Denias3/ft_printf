@@ -249,6 +249,10 @@ CMakeFiles/ft_printf.dir/printf_flag_s.c.o: ../ft_printf.h
 CMakeFiles/ft_printf.dir/printf_flag_s.c.o: ../libft.h
 CMakeFiles/ft_printf.dir/printf_flag_s.c.o: ../printf_flag_s.c
 
+CMakeFiles/ft_printf.dir/printf_flag_u.c.o: ../ft_printf.h
+CMakeFiles/ft_printf.dir/printf_flag_u.c.o: ../libft.h
+CMakeFiles/ft_printf.dir/printf_flag_u.c.o: ../printf_flag_u.c
+
 CMakeFiles/ft_printf.dir/trans_dec.c.o: ../libft.h
 CMakeFiles/ft_printf.dir/trans_dec.c.o: ../trans_dec.c
 

@@ -13,39 +13,29 @@
 #include "libft.h"
 #include "ft_printf.h"
 
-int printf_flag_d(int n, t_flist *elem)
+int printf_flag_d(long long n, t_flist *elem)
 {
 	int z;
 	int s;
 	int i;
+	int min;
 
 	i = 0;
-//	if (ft_strcmp(elem->flag, "hh") == 0)
-//	{
-//		n = (char)n;
-//	}
-//	else if (ft_strcmp(elem->flag, "h") == 0)
-//	{
-//		n = (short int)n;
-//	}
-//	else if (ft_strcmp(elem->flag, "ll") == 0)
-//	{
-//		n = (long long)n;
-//	}
-//	else if (ft_strcmp(elem->flag, "l") == 0)
-//	{
-//		n = (long)n;
-//	}
-	if (ft_numlen(n) > elem->accu_r)
+	min = 0;
+    if (n == 0 && elem->accu_r == 0)
+        s = 0;
+	else if (ft_numlen(n) > elem->accu_r)
 		s = ft_numlen(n);
 	else
 		s = elem->accu_r;
 	z = 0;
 	if ((elem->plus || elem->space) && n > -1)
 		z = 1;
+	if (n < 0 && elem->accu_r > 0)
+	    min = 1;
 	if (elem->minus == 0)
 	{
-		while (i < elem->accu_l - z - s && (elem->dot == 1 || elem->accu_r == 0) && elem->zero == 0)
+		while (i < elem->accu_l - z - s - min && (elem->dot == 1 || (elem->accu_r == 0 && elem->zero == 0)))
 		{
 			ft_putchar(' ');
 			i++;
@@ -62,12 +52,15 @@ int printf_flag_d(int n, t_flist *elem)
 			i++;
 		}
 		s = ft_numlen(n);
-		while (elem->accu_r - s > 0)
+		while (elem->accu_r - s + min > 0)
 		{
 			ft_putchar('0');
 			s++;
 		}
-		ft_putnbr(n);
+		if (n == 0 && elem->dot == 1 && elem->accu_r == 0)
+		    s = 0;
+		else
+		    ft_putnbr(n);
 		return (s + i + z);
 	}
 	else

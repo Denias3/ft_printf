@@ -84,6 +84,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/emeha/CLionProjects/ft_printf/printf_flag_d.c" "/Users/emeha/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/printf_flag_d.c.o"
   "/Users/emeha/CLionProjects/ft_printf/printf_flag_o.c" "/Users/emeha/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/printf_flag_o.c.o"
   "/Users/emeha/CLionProjects/ft_printf/printf_flag_s.c" "/Users/emeha/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/printf_flag_s.c.o"
+  "/Users/emeha/CLionProjects/ft_printf/printf_flag_u.c" "/Users/emeha/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/printf_flag_u.c.o"
   "/Users/emeha/CLionProjects/ft_printf/trans_dec.c" "/Users/emeha/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/trans_dec.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")

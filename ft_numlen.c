@@ -17,16 +17,20 @@ long long	ft_numlen(long long n)
 	long long  s;
 	long long del;
 
+	if (n < -9223372036854775807)
+	    return (20);
 	del = 10;
-	s = 0;
+	s = 1;
 	if (n < 0)
-		s++;
-	while (del)
+    {
+        s++;
+        n = -n;
+    }
+
+	while (n > 9)
 	{
 		s++;
-		if ((n / del) == 0)
-			break ;
-		del = del * 10;
+		n = n / del;
 	}
 	return (s);
 }

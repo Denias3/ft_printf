@@ -323,6 +323,9 @@
 		<Unit filename="/Users/emeha/CLionProjects/ft_printf/printf_flag_s.c">
 			<Option target="ft_printf"/>
 		</Unit>
+		<Unit filename="/Users/emeha/CLionProjects/ft_printf/printf_flag_u.c">
+			<Option target="ft_printf"/>
+		</Unit>
 		<Unit filename="/Users/emeha/CLionProjects/ft_printf/trans_dec.c">
 			<Option target="ft_printf"/>
 		</Unit>

@@ -2283,6 +2283,33 @@ printf_flag_s.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/printf_flag_s.c.s
 .PHONY : printf_flag_s.c.s
 
+printf_flag_u.o: printf_flag_u.c.o
+
+.PHONY : printf_flag_u.o
+
+# target to build an object file
+printf_flag_u.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/printf_flag_u.c.o
+.PHONY : printf_flag_u.c.o
+
+printf_flag_u.i: printf_flag_u.c.i
+
+.PHONY : printf_flag_u.i
+
+# target to preprocess a source file
+printf_flag_u.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/printf_flag_u.c.i
+.PHONY : printf_flag_u.c.i
+
+printf_flag_u.s: printf_flag_u.c.s
+
+.PHONY : printf_flag_u.s
+
+# target to generate assembly for a file
+printf_flag_u.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/printf_flag_u.c.s
+.PHONY : printf_flag_u.c.s
+
 trans_dec.o: trans_dec.c.o
 
 .PHONY : trans_dec.o
@@ -2559,6 +2586,9 @@ help:
 	@echo "... printf_flag_s.o"
 	@echo "... printf_flag_s.i"
 	@echo "... printf_flag_s.s"
+	@echo "... printf_flag_u.o"
+	@echo "... printf_flag_u.i"
+	@echo "... printf_flag_u.s"
 	@echo "... trans_dec.o"
 	@echo "... trans_dec.i"
 	@echo "... trans_dec.s"

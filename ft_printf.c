@@ -39,7 +39,9 @@ t_flist *specifiers(char **format)
 			if (**format == '-')
 				elem->minus = 1;
 		}
-		else if (**format >= '0' && **format <= '9')
+		else if ((**format) == '0')
+            elem->zero = 1;
+		else if (**format >= '1' && **format <= '9')
 		{
             if (ch == 0)
             {
@@ -96,6 +98,53 @@ void    flist_print(t_flist *elem)
 	printf("\n\n");
 }
 
+long long param_size(long long n, char *str)
+{
+//    printf("%s", str);
+    if (ft_strcmp(str, "h") == 0)
+    {
+        n = (short)n;
+    }
+    else if (ft_strcmp(str, "hh") == 0)
+    {
+        n = (char)n;
+    }
+    else if (ft_strcmp(str, "l") == 0)
+    {
+        n = (long)n;
+    }
+    else if (ft_strcmp(str, "ll") == 0)
+    {
+        n = (long long)n;
+    }
+    else
+        n = (int)n;
+    return (n);
+}
+
+unsigned long long param_size_u(unsigned long long n, char *str)
+{
+    printf("%s\n", str);
+	if (ft_strcmp(str, "h") == 0)
+	{
+		n = (unsigned short)n;
+	}
+	else if (ft_strcmp(str, "hh") == 0)
+	{
+		n = (unsigned char)n;
+	}
+	else if (ft_strcmp(str, "l") == 0)
+	{
+		n = (unsigned long)n;
+	}
+	else if (ft_strcmp(str, "ll") == 0)
+	{
+		n = (unsigned long long)n;
+	}
+    else
+        n = (unsigned int)n;
+	return (n);
+}
 
 int     solve_printf(char *format, va_list ap)
 {
@@ -104,6 +153,7 @@ int     solve_printf(char *format, va_list ap)
 	{
 		if (*format == '%')
 		{
+
 			format++;
 			elem = specifiers(&format);
 //			flist_print(elem);
@@ -114,11 +164,11 @@ int     solve_printf(char *format, va_list ap)
 			else if (elem->spec == 'p')
 				g_s += printf_flag_p(ft_print_memory(ft_read_bits(va_arg(ap, void*))), elem);
 			else if (elem->spec == 'd' || elem->spec == 'i')
-				g_s += printf_flag_d(va_arg(ap, int), elem);
+				g_s += printf_flag_d(param_size(va_arg(ap, long long int), elem->flag), elem);
 			else if (elem->spec == 'o')
-				g_s += printf_flag_o(ft_atoi(ft_itoa_base(va_arg(ap, unsigned int), 8)), elem);
+				g_s += printf_flag_o(ft_atoi(ft_itoa_base(param_size_u(va_arg(ap, unsigned long long), elem->flag), 8)), elem);
 			else if (elem->spec == 'u')
-				g_s += printf_flag_d(va_arg(ap, uintmax_t), elem);
+				g_s += printf_flag_u(param_size_u(va_arg(ap, unsigned long long), elem->flag), elem);
 //			else if (format[g_s] == 'x')
 //			{
 //				if ((data = printf_flag_s(ft_strlowcase(ft_itoa_base(va_arg(ap, unsigned int), 16)), l, r, tmp->dot)) == NULL)
@@ -173,7 +223,4 @@ int	ft_printf(char *format, ...)
 
 int main()
 {
-	int s1 = ft_printf("|%.10#05d|", 1);
-	printf("\nsize - %d\n", s1);
-    printf("|%.10#05d|", 1);
 }

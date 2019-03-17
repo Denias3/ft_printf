@@ -249,6 +249,10 @@ CMakeFiles/ft_printf.dir/printf_flag_s.c.o
  /Users/emeha/CLionProjects/ft_printf/ft_printf.h
  /Users/emeha/CLionProjects/ft_printf/libft.h
  /Users/emeha/CLionProjects/ft_printf/printf_flag_s.c
+CMakeFiles/ft_printf.dir/printf_flag_u.c.o
+ /Users/emeha/CLionProjects/ft_printf/ft_printf.h
+ /Users/emeha/CLionProjects/ft_printf/libft.h
+ /Users/emeha/CLionProjects/ft_printf/printf_flag_u.c
 CMakeFiles/ft_printf.dir/trans_dec.c.o
  /Users/emeha/CLionProjects/ft_printf/libft.h
  /Users/emeha/CLionProjects/ft_printf/trans_dec.c
