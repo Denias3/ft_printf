@@ -3,36 +3,43 @@
 /*                                                        :::      ::::::::   */
 /*   ft_read_double.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: emeha <marvin@42.fr>                       +#+  +:+       +#+        */
+/*   By: emeha <emeha@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/12 15:56:38 by emeha             #+#    #+#             */
-/*   Updated: 2019/01/12 15:56:41 by emeha            ###   ########.fr       */
+/*   Updated: 2019/03/21 16:47:44 by emeha            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include "ft_printf.h"
 
-#include <stdio.h>
-char *ft_read_double(double n)
+char *ft_read_double(long double n, t_flist *elem)
 {
-	char	*res;
-	int 	i;
+	char				*res;
+	int 				i;
+	unsigned long long 	fr;
+	int 				st;
+
 	i = 0;
-	res = ft_strnew(0);
-	while (i < 55)
+	if (n < 0)
 	{
-		if (i == 0)
-		{
-			res = ft_strjoin(res, ft_itoa((int) n));
-			res = ft_strjoin(res, ft_chardup('.'));
-			n = n - (int)n;
-		}
-		else
-		{
-			n = n * 10;
-			res = ft_strjoin(res, ft_chardup(((int)n) + 48));
-			n = n - (int)n;
-		}
+		n = -n;
+		res = ft_strnew(1);
+		res[0] = '-';
+	}
+	else
+		res = ft_strnew(0);
+	fr = n;
+	res = ft_strjoin_free(res, ft_itoa(fr));
+	res = ft_strjoin_free(res, ft_chardup('.'));
+	n = n - fr;
+	st = ((elem->accu_r == 0 && elem->dot == 0) ? 6 : elem->accu_r);
+	while (i < st + 1)
+	{
+		n = n * 10;
+		fr = n;
+		res = ft_strjoin_free(res, ft_chardup(fr + 48));
+		n = n - fr;
 		i++;
 	}
 	return (res);

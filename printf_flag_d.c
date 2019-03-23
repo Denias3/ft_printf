@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   printf_flag_d.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: emeha <marvin@42.fr>                       +#+  +:+       +#+        */
+/*   By: emeha <emeha@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/15 18:13:42 by emeha             #+#    #+#             */
-/*   Updated: 2019/01/15 18:13:44 by emeha            ###   ########.fr       */
+/*   Updated: 2019/03/20 14:25:45 by emeha            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int printf_flag_d(long long n, t_flist *elem)
 
 	i = 0;
 	min = 0;
-    if (n == 0 && elem->accu_r == 0)
+    if (n == 0 && elem->accu_r == 0 && elem->dot)
         s = 0;
 	else if (ft_numlen(n) > elem->accu_r)
 		s = ft_numlen(n);
@@ -31,7 +31,7 @@ int printf_flag_d(long long n, t_flist *elem)
 	z = 0;
 	if ((elem->plus || elem->space) && n > -1)
 		z = 1;
-	if (n < 0 && elem->accu_r > 0)
+	if (n < 0 && elem->accu_r > 0 && ft_numlen(n) <= elem->accu_r)
 	    min = 1;
 	if (elem->minus == 0)
 	{
@@ -72,7 +72,7 @@ int printf_flag_d(long long n, t_flist *elem)
 		else if (elem->plus == 0 && elem->space == 1 && n > -1)
 			ft_putchar(' ');
 		s = ft_numlen(n);
-		while (elem->accu_r - s > 0)
+		while (elem->accu_r - s + min> 0)
 		{
 			ft_putchar('0');
 			s++;

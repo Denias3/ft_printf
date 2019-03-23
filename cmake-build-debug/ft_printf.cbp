@@ -170,9 +170,6 @@
 		<Unit filename="/Users/emeha/CLionProjects/ft_printf/ft_powneg.c">
 			<Option target="ft_printf"/>
 		</Unit>
-		<Unit filename="/Users/emeha/CLionProjects/ft_printf/ft_print_flag_p.c">
-			<Option target="ft_printf"/>
-		</Unit>
 		<Unit filename="/Users/emeha/CLionProjects/ft_printf/ft_print_memory.c">
 			<Option target="ft_printf"/>
 		</Unit>
@@ -198,6 +195,9 @@
 			<Option target="ft_printf"/>
 		</Unit>
 		<Unit filename="/Users/emeha/CLionProjects/ft_printf/ft_putnbr_fd.c">
+			<Option target="ft_printf"/>
+		</Unit>
+		<Unit filename="/Users/emeha/CLionProjects/ft_printf/ft_putnbr_u.c">
 			<Option target="ft_printf"/>
 		</Unit>
 		<Unit filename="/Users/emeha/CLionProjects/ft_printf/ft_putstr.c">
@@ -248,6 +248,9 @@
 		<Unit filename="/Users/emeha/CLionProjects/ft_printf/ft_strjoin.c">
 			<Option target="ft_printf"/>
 		</Unit>
+		<Unit filename="/Users/emeha/CLionProjects/ft_printf/ft_strjoin_free.c">
+			<Option target="ft_printf"/>
+		</Unit>
 		<Unit filename="/Users/emeha/CLionProjects/ft_printf/ft_strlcat.c">
 			<Option target="ft_printf"/>
 		</Unit>
@@ -296,6 +299,9 @@
 		<Unit filename="/Users/emeha/CLionProjects/ft_printf/ft_strsub.c">
 			<Option target="ft_printf"/>
 		</Unit>
+		<Unit filename="/Users/emeha/CLionProjects/ft_printf/ft_strsub_free.c">
+			<Option target="ft_printf"/>
+		</Unit>
 		<Unit filename="/Users/emeha/CLionProjects/ft_printf/ft_strtrim.c">
 			<Option target="ft_printf"/>
 		</Unit>
@@ -311,19 +317,37 @@
 		<Unit filename="/Users/emeha/CLionProjects/ft_printf/ft_toupper.c">
 			<Option target="ft_printf"/>
 		</Unit>
+		<Unit filename="/Users/emeha/CLionProjects/ft_printf/ft_utoa_base.c">
+			<Option target="ft_printf"/>
+		</Unit>
+		<Unit filename="/Users/emeha/CLionProjects/ft_printf/ft_utoi.c">
+			<Option target="ft_printf"/>
+		</Unit>
 		<Unit filename="/Users/emeha/CLionProjects/ft_printf/printf_flag_c.c">
 			<Option target="ft_printf"/>
 		</Unit>
 		<Unit filename="/Users/emeha/CLionProjects/ft_printf/printf_flag_d.c">
 			<Option target="ft_printf"/>
 		</Unit>
+		<Unit filename="/Users/emeha/CLionProjects/ft_printf/printf_flag_f.c">
+			<Option target="ft_printf"/>
+		</Unit>
 		<Unit filename="/Users/emeha/CLionProjects/ft_printf/printf_flag_o.c">
+			<Option target="ft_printf"/>
+		</Unit>
+		<Unit filename="/Users/emeha/CLionProjects/ft_printf/printf_flag_p.c">
 			<Option target="ft_printf"/>
 		</Unit>
 		<Unit filename="/Users/emeha/CLionProjects/ft_printf/printf_flag_s.c">
 			<Option target="ft_printf"/>
 		</Unit>
 		<Unit filename="/Users/emeha/CLionProjects/ft_printf/printf_flag_u.c">
+			<Option target="ft_printf"/>
+		</Unit>
+		<Unit filename="/Users/emeha/CLionProjects/ft_printf/printf_flag_x.c">
+			<Option target="ft_printf"/>
+		</Unit>
+		<Unit filename="/Users/emeha/CLionProjects/ft_printf/rounding.c">
 			<Option target="ft_printf"/>
 		</Unit>
 		<Unit filename="/Users/emeha/CLionProjects/ft_printf/trans_dec.c">

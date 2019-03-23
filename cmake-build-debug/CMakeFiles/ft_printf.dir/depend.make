@@ -93,10 +93,6 @@ CMakeFiles/ft_printf.dir/ft_pow.c.o: ../libft.h
 CMakeFiles/ft_printf.dir/ft_powneg.c.o: ../ft_powneg.c
 CMakeFiles/ft_printf.dir/ft_powneg.c.o: ../libft.h
 
-CMakeFiles/ft_printf.dir/ft_print_flag_p.c.o: ../ft_print_flag_p.c
-CMakeFiles/ft_printf.dir/ft_print_flag_p.c.o: ../ft_printf.h
-CMakeFiles/ft_printf.dir/ft_print_flag_p.c.o: ../libft.h
-
 CMakeFiles/ft_printf.dir/ft_print_memory.c.o: ../ft_print_memory.c
 CMakeFiles/ft_printf.dir/ft_print_memory.c.o: ../libft.h
 
@@ -122,6 +118,9 @@ CMakeFiles/ft_printf.dir/ft_putnbr.c.o: ../libft.h
 CMakeFiles/ft_printf.dir/ft_putnbr_fd.c.o: ../ft_putnbr_fd.c
 CMakeFiles/ft_printf.dir/ft_putnbr_fd.c.o: ../libft.h
 
+CMakeFiles/ft_printf.dir/ft_putnbr_u.c.o: ../ft_putnbr_u.c
+CMakeFiles/ft_printf.dir/ft_putnbr_u.c.o: ../libft.h
+
 CMakeFiles/ft_printf.dir/ft_putstr.c.o: ../ft_putstr.c
 CMakeFiles/ft_printf.dir/ft_putstr.c.o: ../libft.h
 
@@ -131,6 +130,7 @@ CMakeFiles/ft_printf.dir/ft_putstr_fd.c.o: ../libft.h
 CMakeFiles/ft_printf.dir/ft_read_bits.c.o: ../ft_read_bits.c
 CMakeFiles/ft_printf.dir/ft_read_bits.c.o: ../libft.h
 
+CMakeFiles/ft_printf.dir/ft_read_double.c.o: ../ft_printf.h
 CMakeFiles/ft_printf.dir/ft_read_double.c.o: ../ft_read_double.c
 CMakeFiles/ft_printf.dir/ft_read_double.c.o: ../libft.h
 
@@ -169,6 +169,9 @@ CMakeFiles/ft_printf.dir/ft_striteri.c.o: ../libft.h
 
 CMakeFiles/ft_printf.dir/ft_strjoin.c.o: ../ft_strjoin.c
 CMakeFiles/ft_printf.dir/ft_strjoin.c.o: ../libft.h
+
+CMakeFiles/ft_printf.dir/ft_strjoin_free.c.o: ../ft_strjoin_free.c
+CMakeFiles/ft_printf.dir/ft_strjoin_free.c.o: ../libft.h
 
 CMakeFiles/ft_printf.dir/ft_strlcat.c.o: ../ft_strlcat.c
 CMakeFiles/ft_printf.dir/ft_strlcat.c.o: ../libft.h
@@ -218,6 +221,9 @@ CMakeFiles/ft_printf.dir/ft_strstr.c.o: ../libft.h
 CMakeFiles/ft_printf.dir/ft_strsub.c.o: ../ft_strsub.c
 CMakeFiles/ft_printf.dir/ft_strsub.c.o: ../libft.h
 
+CMakeFiles/ft_printf.dir/ft_strsub_free.c.o: ../ft_strsub_free.c
+CMakeFiles/ft_printf.dir/ft_strsub_free.c.o: ../libft.h
+
 CMakeFiles/ft_printf.dir/ft_strtrim.c.o: ../ft_strtrim.c
 CMakeFiles/ft_printf.dir/ft_strtrim.c.o: ../libft.h
 
@@ -233,6 +239,12 @@ CMakeFiles/ft_printf.dir/ft_tolower.c.o: ../libft.h
 CMakeFiles/ft_printf.dir/ft_toupper.c.o: ../ft_toupper.c
 CMakeFiles/ft_printf.dir/ft_toupper.c.o: ../libft.h
 
+CMakeFiles/ft_printf.dir/ft_utoa_base.c.o: ../ft_utoa_base.c
+CMakeFiles/ft_printf.dir/ft_utoa_base.c.o: ../libft.h
+
+CMakeFiles/ft_printf.dir/ft_utoi.c.o: ../ft_utoi.c
+CMakeFiles/ft_printf.dir/ft_utoi.c.o: ../libft.h
+
 CMakeFiles/ft_printf.dir/printf_flag_c.c.o: ../ft_printf.h
 CMakeFiles/ft_printf.dir/printf_flag_c.c.o: ../libft.h
 CMakeFiles/ft_printf.dir/printf_flag_c.c.o: ../printf_flag_c.c
@@ -241,9 +253,17 @@ CMakeFiles/ft_printf.dir/printf_flag_d.c.o: ../ft_printf.h
 CMakeFiles/ft_printf.dir/printf_flag_d.c.o: ../libft.h
 CMakeFiles/ft_printf.dir/printf_flag_d.c.o: ../printf_flag_d.c
 
+CMakeFiles/ft_printf.dir/printf_flag_f.c.o: ../ft_printf.h
+CMakeFiles/ft_printf.dir/printf_flag_f.c.o: ../libft.h
+CMakeFiles/ft_printf.dir/printf_flag_f.c.o: ../printf_flag_f.c
+
 CMakeFiles/ft_printf.dir/printf_flag_o.c.o: ../ft_printf.h
 CMakeFiles/ft_printf.dir/printf_flag_o.c.o: ../libft.h
 CMakeFiles/ft_printf.dir/printf_flag_o.c.o: ../printf_flag_o.c
+
+CMakeFiles/ft_printf.dir/printf_flag_p.c.o: ../ft_printf.h
+CMakeFiles/ft_printf.dir/printf_flag_p.c.o: ../libft.h
+CMakeFiles/ft_printf.dir/printf_flag_p.c.o: ../printf_flag_p.c
 
 CMakeFiles/ft_printf.dir/printf_flag_s.c.o: ../ft_printf.h
 CMakeFiles/ft_printf.dir/printf_flag_s.c.o: ../libft.h
@@ -252,6 +272,14 @@ CMakeFiles/ft_printf.dir/printf_flag_s.c.o: ../printf_flag_s.c
 CMakeFiles/ft_printf.dir/printf_flag_u.c.o: ../ft_printf.h
 CMakeFiles/ft_printf.dir/printf_flag_u.c.o: ../libft.h
 CMakeFiles/ft_printf.dir/printf_flag_u.c.o: ../printf_flag_u.c
+
+CMakeFiles/ft_printf.dir/printf_flag_x.c.o: ../ft_printf.h
+CMakeFiles/ft_printf.dir/printf_flag_x.c.o: ../libft.h
+CMakeFiles/ft_printf.dir/printf_flag_x.c.o: ../printf_flag_x.c
+
+CMakeFiles/ft_printf.dir/rounding.c.o: ../ft_printf.h
+CMakeFiles/ft_printf.dir/rounding.c.o: ../libft.h
+CMakeFiles/ft_printf.dir/rounding.c.o: ../rounding.c
 
 CMakeFiles/ft_printf.dir/trans_dec.c.o: ../libft.h
 CMakeFiles/ft_printf.dir/trans_dec.c.o: ../trans_dec.c

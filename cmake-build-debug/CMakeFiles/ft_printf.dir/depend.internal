@@ -93,10 +93,6 @@ CMakeFiles/ft_printf.dir/ft_pow.c.o
 CMakeFiles/ft_printf.dir/ft_powneg.c.o
  /Users/emeha/CLionProjects/ft_printf/ft_powneg.c
  /Users/emeha/CLionProjects/ft_printf/libft.h
-CMakeFiles/ft_printf.dir/ft_print_flag_p.c.o
- /Users/emeha/CLionProjects/ft_printf/ft_print_flag_p.c
- /Users/emeha/CLionProjects/ft_printf/ft_printf.h
- /Users/emeha/CLionProjects/ft_printf/libft.h
 CMakeFiles/ft_printf.dir/ft_print_memory.c.o
  /Users/emeha/CLionProjects/ft_printf/ft_print_memory.c
  /Users/emeha/CLionProjects/ft_printf/libft.h
@@ -122,6 +118,9 @@ CMakeFiles/ft_printf.dir/ft_putnbr.c.o
 CMakeFiles/ft_printf.dir/ft_putnbr_fd.c.o
  /Users/emeha/CLionProjects/ft_printf/ft_putnbr_fd.c
  /Users/emeha/CLionProjects/ft_printf/libft.h
+CMakeFiles/ft_printf.dir/ft_putnbr_u.c.o
+ /Users/emeha/CLionProjects/ft_printf/ft_putnbr_u.c
+ /Users/emeha/CLionProjects/ft_printf/libft.h
 CMakeFiles/ft_printf.dir/ft_putstr.c.o
  /Users/emeha/CLionProjects/ft_printf/ft_putstr.c
  /Users/emeha/CLionProjects/ft_printf/libft.h
@@ -132,6 +131,7 @@ CMakeFiles/ft_printf.dir/ft_read_bits.c.o
  /Users/emeha/CLionProjects/ft_printf/ft_read_bits.c
  /Users/emeha/CLionProjects/ft_printf/libft.h
 CMakeFiles/ft_printf.dir/ft_read_double.c.o
+ /Users/emeha/CLionProjects/ft_printf/ft_printf.h
  /Users/emeha/CLionProjects/ft_printf/ft_read_double.c
  /Users/emeha/CLionProjects/ft_printf/libft.h
 CMakeFiles/ft_printf.dir/ft_read_float.c.o
@@ -169,6 +169,9 @@ CMakeFiles/ft_printf.dir/ft_striteri.c.o
  /Users/emeha/CLionProjects/ft_printf/libft.h
 CMakeFiles/ft_printf.dir/ft_strjoin.c.o
  /Users/emeha/CLionProjects/ft_printf/ft_strjoin.c
+ /Users/emeha/CLionProjects/ft_printf/libft.h
+CMakeFiles/ft_printf.dir/ft_strjoin_free.c.o
+ /Users/emeha/CLionProjects/ft_printf/ft_strjoin_free.c
  /Users/emeha/CLionProjects/ft_printf/libft.h
 CMakeFiles/ft_printf.dir/ft_strlcat.c.o
  /Users/emeha/CLionProjects/ft_printf/ft_strlcat.c
@@ -218,6 +221,9 @@ CMakeFiles/ft_printf.dir/ft_strstr.c.o
 CMakeFiles/ft_printf.dir/ft_strsub.c.o
  /Users/emeha/CLionProjects/ft_printf/ft_strsub.c
  /Users/emeha/CLionProjects/ft_printf/libft.h
+CMakeFiles/ft_printf.dir/ft_strsub_free.c.o
+ /Users/emeha/CLionProjects/ft_printf/ft_strsub_free.c
+ /Users/emeha/CLionProjects/ft_printf/libft.h
 CMakeFiles/ft_printf.dir/ft_strtrim.c.o
  /Users/emeha/CLionProjects/ft_printf/ft_strtrim.c
  /Users/emeha/CLionProjects/ft_printf/libft.h
@@ -233,6 +239,12 @@ CMakeFiles/ft_printf.dir/ft_tolower.c.o
 CMakeFiles/ft_printf.dir/ft_toupper.c.o
  /Users/emeha/CLionProjects/ft_printf/ft_toupper.c
  /Users/emeha/CLionProjects/ft_printf/libft.h
+CMakeFiles/ft_printf.dir/ft_utoa_base.c.o
+ /Users/emeha/CLionProjects/ft_printf/ft_utoa_base.c
+ /Users/emeha/CLionProjects/ft_printf/libft.h
+CMakeFiles/ft_printf.dir/ft_utoi.c.o
+ /Users/emeha/CLionProjects/ft_printf/ft_utoi.c
+ /Users/emeha/CLionProjects/ft_printf/libft.h
 CMakeFiles/ft_printf.dir/printf_flag_c.c.o
  /Users/emeha/CLionProjects/ft_printf/ft_printf.h
  /Users/emeha/CLionProjects/ft_printf/libft.h
@@ -241,10 +253,18 @@ CMakeFiles/ft_printf.dir/printf_flag_d.c.o
  /Users/emeha/CLionProjects/ft_printf/ft_printf.h
  /Users/emeha/CLionProjects/ft_printf/libft.h
  /Users/emeha/CLionProjects/ft_printf/printf_flag_d.c
+CMakeFiles/ft_printf.dir/printf_flag_f.c.o
+ /Users/emeha/CLionProjects/ft_printf/ft_printf.h
+ /Users/emeha/CLionProjects/ft_printf/libft.h
+ /Users/emeha/CLionProjects/ft_printf/printf_flag_f.c
 CMakeFiles/ft_printf.dir/printf_flag_o.c.o
  /Users/emeha/CLionProjects/ft_printf/ft_printf.h
  /Users/emeha/CLionProjects/ft_printf/libft.h
  /Users/emeha/CLionProjects/ft_printf/printf_flag_o.c
+CMakeFiles/ft_printf.dir/printf_flag_p.c.o
+ /Users/emeha/CLionProjects/ft_printf/ft_printf.h
+ /Users/emeha/CLionProjects/ft_printf/libft.h
+ /Users/emeha/CLionProjects/ft_printf/printf_flag_p.c
 CMakeFiles/ft_printf.dir/printf_flag_s.c.o
  /Users/emeha/CLionProjects/ft_printf/ft_printf.h
  /Users/emeha/CLionProjects/ft_printf/libft.h
@@ -253,6 +273,14 @@ CMakeFiles/ft_printf.dir/printf_flag_u.c.o
  /Users/emeha/CLionProjects/ft_printf/ft_printf.h
  /Users/emeha/CLionProjects/ft_printf/libft.h
  /Users/emeha/CLionProjects/ft_printf/printf_flag_u.c
+CMakeFiles/ft_printf.dir/printf_flag_x.c.o
+ /Users/emeha/CLionProjects/ft_printf/ft_printf.h
+ /Users/emeha/CLionProjects/ft_printf/libft.h
+ /Users/emeha/CLionProjects/ft_printf/printf_flag_x.c
+CMakeFiles/ft_printf.dir/rounding.c.o
+ /Users/emeha/CLionProjects/ft_printf/ft_printf.h
+ /Users/emeha/CLionProjects/ft_printf/libft.h
+ /Users/emeha/CLionProjects/ft_printf/rounding.c
 CMakeFiles/ft_printf.dir/trans_dec.c.o
  /Users/emeha/CLionProjects/ft_printf/libft.h
  /Users/emeha/CLionProjects/ft_printf/trans_dec.c

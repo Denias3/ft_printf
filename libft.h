@@ -6,7 +6,7 @@
 /*   By: emeha <emeha@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/01 16:39:50 by emeha             #+#    #+#             */
-/*   Updated: 2018/12/04 11:01:05 by emeha            ###   ########.fr       */
+/*   Updated: 2019/03/21 16:50:20 by emeha            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define LIBFT_H
 
 # include <string.h>
+# include <stdlib.h>
 
 typedef	struct		s_list
 {
@@ -22,6 +23,7 @@ typedef	struct		s_list
 	struct s_list	*next;
 }					t_list;
 
+unsigned long long	ft_utoi(const char *str);
 int					ft_atoi(const char *str);
 size_t				ft_strlen(const char *s);
 void				ft_bzero(void *s, size_t n);
@@ -65,15 +67,19 @@ int					ft_toupper(int c);
 int					ft_strequ(char const *s1, char const *s2);
 int					ft_strnequ(char const *s1, char const *s2, size_t n);
 char				*ft_strsub(char const *s, unsigned int start, size_t len);
+char				*ft_strsub_free(char *s, unsigned int start, size_t len);
 char				*ft_strjoin(char const *s1, char const *s2);
+char				*ft_strjoin_free(char *s1, char *s2);
 char				*ft_strtrim(char const *s);
 char				**ft_strsplit(char const *s, char c);
 char				*ft_itoa(long long n);
 char				*ft_itoa_base(int value, int base);
+char		        *ft_utoa_base(unsigned long long value, unsigned long long  base);
 void				ft_putchar(char c);
 void				ft_putstr(char const *s);
 void				ft_putendl(char const *s);
 void				ft_putnbr(long long n);
+void	            ft_putnbr_u(unsigned long long n);
 void				ft_putchar_fd(char c, int fd);
 void				ft_putstr_fd(char const *s, int fd);
 void				ft_putendl_fd(char const *s, int fd);
@@ -90,14 +96,10 @@ char				*ft_strupcase(char *str);
 char				*ft_strlowcase(char *str);
 long long 			ft_pow(int num, int s);
 char				*ft_chardup(char c);
-char				*ft_float_bits(float m);
-char				*ft_double_bits(double m);
 double				ft_powneg(int num, int s);
 long long			trans_dec(char *str_bit);
-char				*ft_read_double(double n);
 char				*ft_read_float(float n);
 char				*ft_read_bits(void *m);
-char                *ft_print_memory(char *str_bit);
-int                 ft_check_null(char *str, int (*f)(char *));
+char 				*ft_print_memory(char *str_bit, int i);
 
 #endif

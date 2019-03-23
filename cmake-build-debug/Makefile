@@ -933,33 +933,6 @@ ft_powneg.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/ft_powneg.c.s
 .PHONY : ft_powneg.c.s
 
-ft_print_flag_p.o: ft_print_flag_p.c.o
-
-.PHONY : ft_print_flag_p.o
-
-# target to build an object file
-ft_print_flag_p.c.o:
-	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/ft_print_flag_p.c.o
-.PHONY : ft_print_flag_p.c.o
-
-ft_print_flag_p.i: ft_print_flag_p.c.i
-
-.PHONY : ft_print_flag_p.i
-
-# target to preprocess a source file
-ft_print_flag_p.c.i:
-	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/ft_print_flag_p.c.i
-.PHONY : ft_print_flag_p.c.i
-
-ft_print_flag_p.s: ft_print_flag_p.c.s
-
-.PHONY : ft_print_flag_p.s
-
-# target to generate assembly for a file
-ft_print_flag_p.c.s:
-	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/ft_print_flag_p.c.s
-.PHONY : ft_print_flag_p.c.s
-
 ft_print_memory.o: ft_print_memory.c.o
 
 .PHONY : ft_print_memory.o
@@ -1175,6 +1148,33 @@ ft_putnbr_fd.s: ft_putnbr_fd.c.s
 ft_putnbr_fd.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/ft_putnbr_fd.c.s
 .PHONY : ft_putnbr_fd.c.s
+
+ft_putnbr_u.o: ft_putnbr_u.c.o
+
+.PHONY : ft_putnbr_u.o
+
+# target to build an object file
+ft_putnbr_u.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/ft_putnbr_u.c.o
+.PHONY : ft_putnbr_u.c.o
+
+ft_putnbr_u.i: ft_putnbr_u.c.i
+
+.PHONY : ft_putnbr_u.i
+
+# target to preprocess a source file
+ft_putnbr_u.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/ft_putnbr_u.c.i
+.PHONY : ft_putnbr_u.c.i
+
+ft_putnbr_u.s: ft_putnbr_u.c.s
+
+.PHONY : ft_putnbr_u.s
+
+# target to generate assembly for a file
+ft_putnbr_u.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/ft_putnbr_u.c.s
+.PHONY : ft_putnbr_u.c.s
 
 ft_putstr.o: ft_putstr.c.o
 
@@ -1608,6 +1608,33 @@ ft_strjoin.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/ft_strjoin.c.s
 .PHONY : ft_strjoin.c.s
 
+ft_strjoin_free.o: ft_strjoin_free.c.o
+
+.PHONY : ft_strjoin_free.o
+
+# target to build an object file
+ft_strjoin_free.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/ft_strjoin_free.c.o
+.PHONY : ft_strjoin_free.c.o
+
+ft_strjoin_free.i: ft_strjoin_free.c.i
+
+.PHONY : ft_strjoin_free.i
+
+# target to preprocess a source file
+ft_strjoin_free.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/ft_strjoin_free.c.i
+.PHONY : ft_strjoin_free.c.i
+
+ft_strjoin_free.s: ft_strjoin_free.c.s
+
+.PHONY : ft_strjoin_free.s
+
+# target to generate assembly for a file
+ft_strjoin_free.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/ft_strjoin_free.c.s
+.PHONY : ft_strjoin_free.c.s
+
 ft_strlcat.o: ft_strlcat.c.o
 
 .PHONY : ft_strlcat.o
@@ -2040,6 +2067,33 @@ ft_strsub.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/ft_strsub.c.s
 .PHONY : ft_strsub.c.s
 
+ft_strsub_free.o: ft_strsub_free.c.o
+
+.PHONY : ft_strsub_free.o
+
+# target to build an object file
+ft_strsub_free.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/ft_strsub_free.c.o
+.PHONY : ft_strsub_free.c.o
+
+ft_strsub_free.i: ft_strsub_free.c.i
+
+.PHONY : ft_strsub_free.i
+
+# target to preprocess a source file
+ft_strsub_free.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/ft_strsub_free.c.i
+.PHONY : ft_strsub_free.c.i
+
+ft_strsub_free.s: ft_strsub_free.c.s
+
+.PHONY : ft_strsub_free.s
+
+# target to generate assembly for a file
+ft_strsub_free.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/ft_strsub_free.c.s
+.PHONY : ft_strsub_free.c.s
+
 ft_strtrim.o: ft_strtrim.c.o
 
 .PHONY : ft_strtrim.o
@@ -2175,6 +2229,60 @@ ft_toupper.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/ft_toupper.c.s
 .PHONY : ft_toupper.c.s
 
+ft_utoa_base.o: ft_utoa_base.c.o
+
+.PHONY : ft_utoa_base.o
+
+# target to build an object file
+ft_utoa_base.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/ft_utoa_base.c.o
+.PHONY : ft_utoa_base.c.o
+
+ft_utoa_base.i: ft_utoa_base.c.i
+
+.PHONY : ft_utoa_base.i
+
+# target to preprocess a source file
+ft_utoa_base.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/ft_utoa_base.c.i
+.PHONY : ft_utoa_base.c.i
+
+ft_utoa_base.s: ft_utoa_base.c.s
+
+.PHONY : ft_utoa_base.s
+
+# target to generate assembly for a file
+ft_utoa_base.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/ft_utoa_base.c.s
+.PHONY : ft_utoa_base.c.s
+
+ft_utoi.o: ft_utoi.c.o
+
+.PHONY : ft_utoi.o
+
+# target to build an object file
+ft_utoi.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/ft_utoi.c.o
+.PHONY : ft_utoi.c.o
+
+ft_utoi.i: ft_utoi.c.i
+
+.PHONY : ft_utoi.i
+
+# target to preprocess a source file
+ft_utoi.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/ft_utoi.c.i
+.PHONY : ft_utoi.c.i
+
+ft_utoi.s: ft_utoi.c.s
+
+.PHONY : ft_utoi.s
+
+# target to generate assembly for a file
+ft_utoi.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/ft_utoi.c.s
+.PHONY : ft_utoi.c.s
+
 printf_flag_c.o: printf_flag_c.c.o
 
 .PHONY : printf_flag_c.o
@@ -2229,6 +2337,33 @@ printf_flag_d.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/printf_flag_d.c.s
 .PHONY : printf_flag_d.c.s
 
+printf_flag_f.o: printf_flag_f.c.o
+
+.PHONY : printf_flag_f.o
+
+# target to build an object file
+printf_flag_f.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/printf_flag_f.c.o
+.PHONY : printf_flag_f.c.o
+
+printf_flag_f.i: printf_flag_f.c.i
+
+.PHONY : printf_flag_f.i
+
+# target to preprocess a source file
+printf_flag_f.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/printf_flag_f.c.i
+.PHONY : printf_flag_f.c.i
+
+printf_flag_f.s: printf_flag_f.c.s
+
+.PHONY : printf_flag_f.s
+
+# target to generate assembly for a file
+printf_flag_f.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/printf_flag_f.c.s
+.PHONY : printf_flag_f.c.s
+
 printf_flag_o.o: printf_flag_o.c.o
 
 .PHONY : printf_flag_o.o
@@ -2255,6 +2390,33 @@ printf_flag_o.s: printf_flag_o.c.s
 printf_flag_o.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/printf_flag_o.c.s
 .PHONY : printf_flag_o.c.s
+
+printf_flag_p.o: printf_flag_p.c.o
+
+.PHONY : printf_flag_p.o
+
+# target to build an object file
+printf_flag_p.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/printf_flag_p.c.o
+.PHONY : printf_flag_p.c.o
+
+printf_flag_p.i: printf_flag_p.c.i
+
+.PHONY : printf_flag_p.i
+
+# target to preprocess a source file
+printf_flag_p.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/printf_flag_p.c.i
+.PHONY : printf_flag_p.c.i
+
+printf_flag_p.s: printf_flag_p.c.s
+
+.PHONY : printf_flag_p.s
+
+# target to generate assembly for a file
+printf_flag_p.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/printf_flag_p.c.s
+.PHONY : printf_flag_p.c.s
 
 printf_flag_s.o: printf_flag_s.c.o
 
@@ -2309,6 +2471,60 @@ printf_flag_u.s: printf_flag_u.c.s
 printf_flag_u.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/printf_flag_u.c.s
 .PHONY : printf_flag_u.c.s
+
+printf_flag_x.o: printf_flag_x.c.o
+
+.PHONY : printf_flag_x.o
+
+# target to build an object file
+printf_flag_x.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/printf_flag_x.c.o
+.PHONY : printf_flag_x.c.o
+
+printf_flag_x.i: printf_flag_x.c.i
+
+.PHONY : printf_flag_x.i
+
+# target to preprocess a source file
+printf_flag_x.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/printf_flag_x.c.i
+.PHONY : printf_flag_x.c.i
+
+printf_flag_x.s: printf_flag_x.c.s
+
+.PHONY : printf_flag_x.s
+
+# target to generate assembly for a file
+printf_flag_x.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/printf_flag_x.c.s
+.PHONY : printf_flag_x.c.s
+
+rounding.o: rounding.c.o
+
+.PHONY : rounding.o
+
+# target to build an object file
+rounding.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/rounding.c.o
+.PHONY : rounding.c.o
+
+rounding.i: rounding.c.i
+
+.PHONY : rounding.i
+
+# target to preprocess a source file
+rounding.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/rounding.c.i
+.PHONY : rounding.c.i
+
+rounding.s: rounding.c.s
+
+.PHONY : rounding.s
+
+# target to generate assembly for a file
+rounding.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/rounding.c.s
+.PHONY : rounding.c.s
 
 trans_dec.o: trans_dec.c.o
 
@@ -2436,9 +2652,6 @@ help:
 	@echo "... ft_powneg.o"
 	@echo "... ft_powneg.i"
 	@echo "... ft_powneg.s"
-	@echo "... ft_print_flag_p.o"
-	@echo "... ft_print_flag_p.i"
-	@echo "... ft_print_flag_p.s"
 	@echo "... ft_print_memory.o"
 	@echo "... ft_print_memory.i"
 	@echo "... ft_print_memory.s"
@@ -2463,6 +2676,9 @@ help:
 	@echo "... ft_putnbr_fd.o"
 	@echo "... ft_putnbr_fd.i"
 	@echo "... ft_putnbr_fd.s"
+	@echo "... ft_putnbr_u.o"
+	@echo "... ft_putnbr_u.i"
+	@echo "... ft_putnbr_u.s"
 	@echo "... ft_putstr.o"
 	@echo "... ft_putstr.i"
 	@echo "... ft_putstr.s"
@@ -2511,6 +2727,9 @@ help:
 	@echo "... ft_strjoin.o"
 	@echo "... ft_strjoin.i"
 	@echo "... ft_strjoin.s"
+	@echo "... ft_strjoin_free.o"
+	@echo "... ft_strjoin_free.i"
+	@echo "... ft_strjoin_free.s"
 	@echo "... ft_strlcat.o"
 	@echo "... ft_strlcat.i"
 	@echo "... ft_strlcat.s"
@@ -2559,6 +2778,9 @@ help:
 	@echo "... ft_strsub.o"
 	@echo "... ft_strsub.i"
 	@echo "... ft_strsub.s"
+	@echo "... ft_strsub_free.o"
+	@echo "... ft_strsub_free.i"
+	@echo "... ft_strsub_free.s"
 	@echo "... ft_strtrim.o"
 	@echo "... ft_strtrim.i"
 	@echo "... ft_strtrim.s"
@@ -2574,21 +2796,39 @@ help:
 	@echo "... ft_toupper.o"
 	@echo "... ft_toupper.i"
 	@echo "... ft_toupper.s"
+	@echo "... ft_utoa_base.o"
+	@echo "... ft_utoa_base.i"
+	@echo "... ft_utoa_base.s"
+	@echo "... ft_utoi.o"
+	@echo "... ft_utoi.i"
+	@echo "... ft_utoi.s"
 	@echo "... printf_flag_c.o"
 	@echo "... printf_flag_c.i"
 	@echo "... printf_flag_c.s"
 	@echo "... printf_flag_d.o"
 	@echo "... printf_flag_d.i"
 	@echo "... printf_flag_d.s"
+	@echo "... printf_flag_f.o"
+	@echo "... printf_flag_f.i"
+	@echo "... printf_flag_f.s"
 	@echo "... printf_flag_o.o"
 	@echo "... printf_flag_o.i"
 	@echo "... printf_flag_o.s"
+	@echo "... printf_flag_p.o"
+	@echo "... printf_flag_p.i"
+	@echo "... printf_flag_p.s"
 	@echo "... printf_flag_s.o"
 	@echo "... printf_flag_s.i"
 	@echo "... printf_flag_s.s"
 	@echo "... printf_flag_u.o"
 	@echo "... printf_flag_u.i"
 	@echo "... printf_flag_u.s"
+	@echo "... printf_flag_x.o"
+	@echo "... printf_flag_x.i"
+	@echo "... printf_flag_x.s"
+	@echo "... rounding.o"
+	@echo "... rounding.i"
+	@echo "... rounding.s"
 	@echo "... trans_dec.o"
 	@echo "... trans_dec.i"
 	@echo "... trans_dec.s"

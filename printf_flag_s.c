@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   printf_flag_s.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: emeha <marvin@42.fr>                       +#+  +:+       +#+        */
+/*   By: emeha <emeha@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/16 16:54:48 by emeha             #+#    #+#             */
-/*   Updated: 2019/01/16 16:54:51 by emeha            ###   ########.fr       */
+/*   Updated: 2019/03/18 17:47:50 by emeha            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,16 @@ int printf_flag_s(char *str, t_flist *elem)
 	char    *tmp;
 	int     s;
 	int     i;
+	int		ch;
 
 	i = 0;
+	ch = 0;
 	if (str == NULL)
-	    str = ft_strdup("(null)");
+	{
+		str = ft_strdup("(null)");
+		ch = 1;
+	}
+		
 	if (elem->dot == 1)
 		tmp = ft_strsub(str, 0, elem->accu_r);
 	else
@@ -38,6 +44,9 @@ int printf_flag_s(char *str, t_flist *elem)
 			i++;
 		}
 		ft_putstr(tmp);
+		free(tmp);
+		if (ch)
+			free(str);
 		return (s + i);
 	}
 	else
@@ -49,6 +58,9 @@ int printf_flag_s(char *str, t_flist *elem)
 			ft_putchar(' ');
 			i++;
 		}
+		free(tmp);
+		if (ch)
+			free(str);
 		return (i);
 	}
 }

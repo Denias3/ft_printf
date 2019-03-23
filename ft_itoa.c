@@ -6,12 +6,11 @@
 /*   By: emeha <emeha@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/30 16:54:00 by emeha             #+#    #+#             */
-/*   Updated: 2018/12/01 16:25:04 by emeha            ###   ########.fr       */
+/*   Updated: 2019/03/20 04:59:03 by emeha            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 #include <stdlib.h>
 
 static int	ft_strlenn(long long n, long long *del)
@@ -47,8 +46,8 @@ char		*ft_itoa(long long n)
 	i = 0;
 	del = 10;
 	num = 0;
-	if (n == -2147483648)
-		return (ft_strdup("-2147483648"));
+	// if (n == -2147483648)
+		// return (ft_strdup("-2147483648"));
 	if (n < 0)
 	{
 		n = -n;

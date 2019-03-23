@@ -3,24 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_memory.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: emeha <marvin@42.fr>                       +#+  +:+       +#+        */
+/*   By: emeha <emeha@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/21 17:16:32 by emeha             #+#    #+#             */
-/*   Updated: 2019/01/21 17:16:35 by emeha            ###   ########.fr       */
+/*   Updated: 2019/03/18 19:17:21 by emeha            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_print_memory(char *str_bit)
+char *ft_print_memory(char *str_bit, int i)
 {
 	char	*str;
-	int 	i;
 	int 	j;
 	int		num;
 	int     ch = 0;
+	char	*tmp;
 
-	i = 0;
 	str = ft_strnew(0);
 	while (i < 48)
 	{
@@ -37,10 +36,14 @@ char *ft_print_memory(char *str_bit)
 			ch = 1;
 		if (ch || i == 44)
 		{
+			tmp = str;
 			if (num <= 9 && num >= 0)
+			{
 				str = ft_strjoin(str, ft_itoa(num));
+			}
 			else if (num <= 15 && num >= 10)
 				str = ft_strjoin(str, ft_chardup(num + 87));
+			free(tmp);
 		}
 	}
 	return (str);

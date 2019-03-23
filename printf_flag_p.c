@@ -24,10 +24,10 @@ int printf_flag_p(char *str, t_flist *elem)
 	z = 0;
 	if (elem->zero == 1 && elem->dot == 0)
 		ft_putstr("0x");
-	s = (9 > elem->accu_r) ? 11 : elem->accu_r + 2;
+	s = ft_strlen(str);
 	if (elem->minus == 0)
 	{
-		while (i < elem->accu_l - s)
+		while (i < elem->accu_l - s - 2)
 		{
 			if (elem->zero == 1 && elem->dot == 0)
 				ft_putchar('0');
@@ -37,33 +37,36 @@ int printf_flag_p(char *str, t_flist *elem)
 		}
 		if (elem->zero == 0 || elem->dot == 1)
 			ft_putstr("0x");
-		while ((s - 11) > 0)
+		if (ft_utoi(str) == 0 && elem->dot == 1)
+			s = 0;
+		while (elem->accu_r - s > 0)
 		{
 			ft_putchar('0');
-			s--;
-			i++;
+			s++;
 		}
-		ft_putstr(str);
-		return (s + i);
+		if (ft_utoi(str) != 0 || elem->dot == 0)
+			ft_putstr(str);
+		return (s + i + 2);
 	}
 	else
 	{
 		if (elem->zero == 0 || elem->dot == 1)
 			ft_putstr("0x");
-		i = s;
-		while ((s-- - 11) > 0)
+		if (ft_utoi(str) == 0 && elem->dot == 1)
+			s = 0;
+		while (elem->accu_r - s > 0)
 		{
 			ft_putchar('0');
-			z++;
+			s++;
 		}
-
-		ft_putstr(str);
-		while (i < elem->accu_l)
+		i = s;
+		if (ft_utoi(str) != 0 || elem->dot == 0)
+			ft_putstr(str);
+		while (i < elem->accu_l - 2)
 		{
 			ft_putchar(' ');
 			i++;
 		}
-		return (i + z);
+		return (i + z + 2);
 	}
-
 }

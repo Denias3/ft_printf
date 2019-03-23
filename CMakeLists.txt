@@ -3,6 +3,5 @@ project(ft_printf C)
 
 set(CMAKE_C_STANDARD 90)
 file(GLOB CPPS "ft_*.c")
-file(GLOB FLAG "-Wall -Wextra -Werror")
 
-add_executable(ft_printf ${CPPS} ${FLAG} ft_printf.h ft_flist_fun.c ft_itoa_base.c ft_strref.c ft_pow.c ft_chardup.c ft_float_bits.c ft_powneg.c ft_read_double.c trans_dec.c ft_read_float.c ft_read_bits.c ft_print_flag_p.c printf_flag_c.c printf_flag_d.c printf_flag_s.c ft_check_null.c ft_print_memory.c printf_flag_o.c  printf_flag_u.c)
+add_executable(ft_printf ${CPPS} rounding.c ft_printf.h printf_flag_f.c ft_strjoin_free.c ft_strsub_free.c printf_flag_p.c ft_flist_fun.c ft_utoi.c ft_itoa_base.c ft_strref.c ft_pow.c ft_chardup.c ft_float_bits.c ft_powneg.c ft_read_double.c trans_dec.c ft_read_float.c ft_read_bits.c printf_flag_p.c printf_flag_c.c printf_flag_d.c ft_utoa_base.c printf_flag_s.c ft_putnbr_u.c ft_check_null.c ft_print_memory.c printf_flag_o.c printf_flag_u.c printf_flag_x.c)

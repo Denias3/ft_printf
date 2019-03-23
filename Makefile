@@ -1,14 +1,23 @@
 NAME = libftprintf.a
-OUT = *.o
-HEAD = header.h
-SRC = *.c
+FILEC = *.c
+
+FILEO = *.o
+
+LIB = libft.h
+
+FLAG = -Wall -Wextra -Werror
+
 all: $(NAME)
-$(NAME):
-	gcc -Wall -Wextra -Werror -c $(SRC) -I $(HEAD)
-	ar rc $(NAME) $(OUT)
+
+$(NAME): $(FILEC)
+	gcc $(FLAG) -c $(FILEC) -I $(LIB)
+	ar rc $(NAME) $(FILEO)
 	ranlib $(NAME)
+
 clean:
-	rm -rf $(OUT)
+	rm -rf $(FILEO)
+
 fclean: clean
 	rm -rf $(NAME)
+
 re: fclean all

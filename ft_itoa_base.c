@@ -3,17 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa_base.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: emeha <marvin@42.fr>                       +#+  +:+       +#+        */
+/*   By: emeha <emeha@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/05 10:37:04 by emeha             #+#    #+#             */
-/*   Updated: 2019/01/05 10:37:06 by emeha            ###   ########.fr       */
+/*   Updated: 2019/03/18 17:53:42 by emeha            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
-
-#include <stdio.h>
 
 char		*ft_itoa_base(int value, int base)
 {
