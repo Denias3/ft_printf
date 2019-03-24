@@ -1,9 +1,9 @@
 NAME = libftprintf.a
-FILEC = *.c
+FILEC = *.c ./libft/*.c
 
 FILEO = *.o
 
-LIB = libft.h
+LIB = ft_printf.h ./libft/libft.h 
 
 FLAG = -Wall -Wextra -Werror
 

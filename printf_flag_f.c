@@ -6,18 +6,17 @@
 /*   By: emeha <emeha@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/21 14:40:16 by emeha             #+#    #+#             */
-/*   Updated: 2019/03/21 15:17:17 by emeha            ###   ########.fr       */
+/*   Updated: 2019/03/24 16:47:09 by emeha            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "libft/libft.h"
 #include "ft_printf.h"
 
-
-int printf_flag_f(char *str, t_flist *elem)
+int	printf_flag_f(char *str, t_flist *elem)
 {
-	int     s;
-	int     i;
+	int		s;
+	int		i;
 	int		z;
 	int		min;
 
@@ -31,7 +30,7 @@ int printf_flag_f(char *str, t_flist *elem)
 		z = 1;
 	s = ft_strlen(str);
 	if (elem->accu_r == 0 && elem->dot == 1)
-		str = ft_strsub_free(str, min, s - 2 +  elem->hash - min);
+		str = ft_strsub_free(str, min, s - 2 + elem->hash - min);
 	else
 		str = ft_strsub_free(str, min, s - 1 - min);
 	i = 0;
@@ -54,13 +53,13 @@ int printf_flag_f(char *str, t_flist *elem)
 		}
 		if (min == 1 && elem->zero == 0)
 			ft_putchar('-');
-		if (elem->plus == 1 && elem->zero == 0)
+		else if (elem->plus == 1 && elem->zero == 0)
 			ft_putchar('+');
 		else if (elem->space && elem->zero == 0)
 			ft_putchar(' ');
 		ft_putstr(str);
 		free(str);
-		return (s + i);
+		return (s + i + min + z);
 	}
 	else
 	{
@@ -78,7 +77,6 @@ int printf_flag_f(char *str, t_flist *elem)
 			i++;
 		}
 		free(str);
-		return (i);
+		return (i + min + z);
 	}
-
 }

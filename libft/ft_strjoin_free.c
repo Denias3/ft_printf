@@ -1,42 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_flist_fun.c                                     :+:      :+:    :+:   */
+/*   ft_strjoin_free.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: emeha <emeha@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/03/24 17:54:11 by emeha             #+#    #+#             */
-/*   Updated: 2019/03/24 18:00:16 by emeha            ###   ########.fr       */
+/*   Created: 2019/03/23 16:39:37 by emeha             #+#    #+#             */
+/*   Updated: 2019/03/24 17:05:22 by emeha            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
-#include "libft/libft.h"
+#include "libft.h"
 #include <stdlib.h>
 
-t_flist		*flist_new_pf(void)
+char	*ft_strjoin_free(char *s1, char *s2)
 {
-	t_flist		*new;
+	int		i;
+	int		size1;
+	int		size2;
+	char	*str;
 
-	new = (t_flist*)malloc(sizeof(t_flist));
-	if (new == NULL)
+	if (s1 == NULL || s2 == NULL)
 		return (NULL);
-	new->accu_l = 0;
-	new->dot = 0;
-	new->accu_r = 0;
-	new->flag = NULL;
-	new->spec = 0;
-	new->hash = 0;
-	new->minus = 0;
-	new->plus = 0;
-	new->space = 0;
-	new->zero = 0;
-	return (new);
-}
-
-void		flist_free(t_flist *elem)
-{
-	free(elem->flag);
-	elem->flag = NULL;
-	free(elem);
+	size1 = ft_strlen(s1);
+	size2 = ft_strlen(s2);
+	str = (char*)malloc(sizeof(char) * (size1 + size2 + 1));
+	i = -1;
+	if (str != NULL)
+	{
+		while (i++ < size1)
+			str[i] = s1[i];
+		i = -1;
+		while (i++ < size2)
+			str[size1 + i] = s2[i];
+		str[size1 + i - 1] = '\0';
+	}
+	free(s1);
+	free(s2);
+	return (str);
 }

@@ -6,21 +6,20 @@
 /*   By: emeha <emeha@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/27 17:46:02 by emeha             #+#    #+#             */
-/*   Updated: 2019/03/20 16:01:31 by emeha            ###   ########.fr       */
+/*   Updated: 2019/03/24 16:48:25 by emeha            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "libft/libft.h"
 #include "ft_printf.h"
 
-int printf_flag_o(char *str, t_flist *elem)
+int	printf_flag_o(char *str, t_flist *elem)
 {
 	int z;
 	int s;
 	int i;
 
 	i = 0;
-
 	z = 0;
 	if (elem->hash == 1 && ft_utoi(str) != 0)
 		z = 1;
@@ -32,7 +31,8 @@ int printf_flag_o(char *str, t_flist *elem)
 		s = elem->accu_r - z;
 	if (elem->minus == 0)
 	{
-		while (i < elem->accu_l - s - z && (elem->dot == 1 || (elem->accu_r == 0 && elem->zero == 0)))
+		while (i < elem->accu_l - s - z && (elem->dot == 1 ||
+				(elem->accu_r == 0 && elem->zero == 0)))
 		{
 			ft_putchar(' ');
 			i++;
@@ -50,7 +50,8 @@ int printf_flag_o(char *str, t_flist *elem)
 			ft_putchar('0');
 			s++;
 		}
-		if (ft_utoi(str) != 0 || elem->hash == 1 || (elem->hash == 0 && elem->dot == 0)
+		if (ft_utoi(str) != 0 || elem->hash == 1 ||
+				(elem->hash == 0 && elem->dot == 0)
 			|| elem->accu_r > 0)
 			ft_putstr(str);
 		else
@@ -67,12 +68,14 @@ int printf_flag_o(char *str, t_flist *elem)
 			ft_putchar('0');
 			s++;
 		}
-		if (ft_utoi(str) != 0 || elem->hash == 1 || (elem->hash == 0 && elem->dot == 0)
+		if (ft_utoi(str) != 0 || elem->hash == 1 ||
+				(elem->hash == 0 && elem->dot == 0)
 			|| elem->accu_r > 0)
 			ft_putstr(str);
 		else
 			s = 0;
-		while (i < elem->accu_l - z - s && (elem->dot == 1 || elem->accu_r == 0))
+		while (i < elem->accu_l - z - s && (elem->dot == 1 ||
+				elem->accu_r == 0))
 		{
 			ft_putchar(' ');
 			i++;

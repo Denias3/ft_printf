@@ -1,24 +1,23 @@
 /* ************************************************************************** */
-/*
-	free(s2);                                                                     */
+/*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_flag_p.c                                  :+:      :+:    :+:   */
+/*   printf_flag_p.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: emeha <marvin@42.fr>                       +#+  +:+       +#+        */
+/*   By: emeha <emeha@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/01/21 17:25:13 by emeha             #+#    #+#             */
-/*   Updated: 2019/01/21 17:25:16 by emeha            ###   ########.fr       */
+/*   Created: 2019/03/24 16:48:55 by emeha             #+#    #+#             */
+/*   Updated: 2019/03/24 16:49:17 by emeha            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "libft/libft.h"
 #include "ft_printf.h"
 
-int printf_flag_p(char *str, t_flist *elem)
+int	printf_flag_p(char *str, t_flist *elem)
 {
-	int     i;
-	int     s;
-	int     z;
+	int	i;
+	int	s;
+	int	z;
 
 	i = 0;
 	z = 0;
