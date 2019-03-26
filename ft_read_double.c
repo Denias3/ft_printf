@@ -6,14 +6,14 @@
 /*   By: emeha <emeha@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/12 15:56:38 by emeha             #+#    #+#             */
-/*   Updated: 2019/03/24 19:45:03 by emeha            ###   ########.fr       */
+/*   Updated: 2019/03/25 16:23:41 by emeha            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft/libft.h"
 #include "ft_printf.h"
 
-char	*ft_read_double(double n, t_flist *elem)
+char	*ft_read_double(long double n, t_flist *elem)
 {
 	char				*res;
 	int					i;

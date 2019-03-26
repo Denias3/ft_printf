@@ -1,27 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.c                                        :+:      :+:    :+:   */
+/*   specifiers_1.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: emeha <emeha@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/01/04 11:42:56 by emeha             #+#    #+#             */
-/*   Updated: 2019/03/25 17:49:29 by emeha            ###   ########.fr       */
+/*   Created: 2019/03/25 18:07:07 by emeha             #+#    #+#             */
+/*   Updated: 2019/03/25 18:08:26 by emeha            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft/libft.h"
 #include "ft_printf.h"
 
-int g_s;
-
-int					ft_printf(char *format, ...)
+void	specifiers_5(char **format, short *ch, t_flist *elem)
 {
-	va_list ap;
-
-	g_s = 0;
-	va_start(ap, format);
-	solve_printf(format, ap);
-	va_end(ap);
-	return (g_s);
+	*ch = 1;
+	elem->dot = *ch;
+	if (*(*(format) + 1) == '0')
+		(*format)++;
 }

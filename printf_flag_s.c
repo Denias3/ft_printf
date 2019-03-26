@@ -6,58 +6,71 @@
 /*   By: emeha <emeha@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/16 16:54:48 by emeha             #+#    #+#             */
-/*   Updated: 2019/03/24 16:50:26 by emeha            ###   ########.fr       */
+/*   Updated: 2019/03/25 17:19:47 by emeha            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft/libft.h"
 #include "ft_printf.h"
 
-int	printf_flag_s(char *str, t_flist *elem)
+static void	printf_flag_s_1(char **str, t_flist *elem, int *i, int *s)
 {
-	char	*tmp;
+	while ((*i) < elem->accu_l - (*s))
+	{
+		if (elem->zero == 1)
+			ft_putchar('0');
+		else
+			ft_putchar(' ');
+		(*i)++;
+	}
+	ft_putstr(*str);
+}
+
+static void	printf_flag_s_2(char **str, t_flist *elem, int *i)
+{
+	ft_putstr(*str);
+	(*i) = ft_strlen(*str);
+	while ((*i) < elem->accu_l)
+	{
+		ft_putchar(' ');
+		(*i)++;
+	}
+}
+
+static void	printf_flag_s_3(char **str, t_flist *elem, int *ch)
+{
+	if (*str == NULL)
+	{
+		*str = ft_strdup("(null)");
+		(*ch) = 1;
+	}
+	if (elem->dot == 1)
+	{
+		*str = ft_strsub(*str, 0, elem->accu_r);
+		(*ch) = 1;
+	}
+}
+
+int			printf_flag_s(char *str, t_flist *elem)
+{
 	int		s;
 	int		i;
 	int		ch;
 
 	i = 0;
 	ch = 0;
-	if (str == NULL)
-	{
-		str = ft_strdup("(null)");
-		ch = 1;
-	}
-	if (elem->dot == 1)
-		tmp = ft_strsub(str, 0, elem->accu_r);
-	else
-		tmp = ft_strdup(str);
-	s = ft_strlen(tmp);
+	printf_flag_s_3(&str, elem, &ch);
+	s = ft_strlen(str);
 	if (elem->minus == 0)
 	{
-		while (i < elem->accu_l - s)
-		{
-			if (elem->zero == 1)
-				ft_putchar('0');
-			else
-				ft_putchar(' ');
-			i++;
-		}
-		ft_putstr(tmp);
-		free(tmp);
+		printf_flag_s_1(&str, elem, &i, &s);
 		if (ch)
 			free(str);
 		return (s + i);
 	}
 	else
 	{
-		ft_putstr(tmp);
-		i = ft_strlen(tmp);
-		while (i < elem->accu_l)
-		{
-			ft_putchar(' ');
-			i++;
-		}
-		free(tmp);
+		printf_flag_s_2(&str, elem, &i);
 		if (ch)
 			free(str);
 		return (i);
